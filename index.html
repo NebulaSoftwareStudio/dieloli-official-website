@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    <title>死亡萝莉：基于元胞算法的人生模拟游戏</title>
+    <meta name="Description"
+          content="在游戏中，你将与多达 2800 位，由算法模拟整个人生成长过程，随机生成的游戏角色一起，在校园里生活。你将在游戏中体验不一样的人生。当然，这些都需要你自己去进行探索">
+    <meta name="Keywords" content="死亡萝莉,dieloli,die,loli,game,python">
+    <meta name="author" content="pokemonchw">
+    <meta name="revised" content="Hanawa Hinata 2022/03/19">
+    <meta name="generator" content="PhpStorm">
+    <!-- SEO END -->
+
+    <!-- 视口属性，用于自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" href="assets/css/style.css?v=202203230001">
+    <!-- 外部样式表 END -->
+</head>
+<body>
+<div class="page-loader"></div>
+<div class="app">
+    <header class="page-header fixed">
+        <div class="content menu">
+            <a href="#" class="item">首页</a>
+            <a href="#description" class="item">介绍</a>
+            <a href="#download" class="item">下载</a>
+            <a href="#contribute" class="item">参与</a>
+            <a href="#QA" class="item">Q&A</a>
+        </div>
+    </header>
+    <div class="main-title-box">
+        <div class="content">
+            <h1 class="main-title">与多达 2800 位由算法随机生成的游戏角色相会<br/>死亡萝莉现已发布正式版</h1>
+            <p class="description">最新更新版本：Past.2022.3.12.15</p>
+            <div class="button-list">
+                <a class="button primary" href="#download">开始游戏</a>
+                <a class="button primary ghost" href="#contribute">参与贡献</a>
+            </div>
+        </div>
+    </div>
+    <div class="description-box" id="description">
+        <div class="content">
+            <h2 class="title">什么是死亡萝莉？</h2>
+            <p>在游戏中，你将与多达 2800 位<span>由算法模拟整个人生成长过程随机生成</span>的游戏角色一起在校园里生活。
+                你将在游戏中体验不一样的人生，这里有魔法少女，有触手怪，有吸血鬼，也有巫女，妖怪，幽灵，和帅气的魔法师。
+                当然，这些都需要你自己去进行探索。至少，你也可以将它当成一个普通的校园恋爱模拟游戏玩。</p>
+            <p>游戏中基于元胞算法进行即时演算，所有事件的脉络和走向<span>都不是预设好的</span>。每个角色都有各自的经历和成长，不断地学习和生活。</p>
+            <p>在这里，没有人是特殊的，也没有人可以掌控世界，<span>玩家也不行</span>。</p>
+        </div>
+    </div>
+    <div class="download-box" id="download">
+        <div class="content">
+            <h2 class="title">下载 & 游玩</h2>
+            <div class="alert-box info">在游戏设计中，有一定的色情、暴力、宗教、等内容，在进行游戏前请确认自己的三观足够健全到不会随意被动摇和影响。
+            在预想状态下，我们假定您已完整安装 Python 环境。除二进制编译版本以外，dieloli 依赖 Python 3.x 开发环境，请在下载运行前关注当前运行环境是否符合要求。</div>
+            <div class="download-list">
+                <div class="type-list">
+                    <div class="item windows">Windows</div>
+                </div>
+                <div class="steps-list">
+                    <div id="windowsSteps">
+                        <ol>
+                            <li>
+                                <p>下载二进制文件。您可以选择前往本项目 Github 的 Release
+                                    页面下载官方编译版本，或者使用本站托管的下载地址。如果您不信任编译版本，您可以下载源代码后自行编译。</p>
+                                <div class="description">主分支最新版本：Past.2022.3.12.15</div>
+                                <div class="button-list">
+                                    <a href="https://github.com/pokemonchw/dieloli/releases" target="_blank" class="download-button">从 Github 下载</a>
+                                    <a href="http://static.nebula-soft.com/windows/games/dieloli/latest/" target="_blank" class="download-button">从本站托管服务器下载</a>
+                                    <a href="https://github.com/pokemonchw/dieloli/archive/refs/heads/master.zip" target="_blank" class="download-button">下载源代码</a>
+                                </div>
+                            </li>
+                            <li>解压下载的二进制文件，直接运行<code>game.exe</code>文件</li>
+                        </ol>
+                        <p class="description">初次运行需要较长时间预热数据。</p>
+                    </div>
+                </div>
+                <div class="type-list">
+                    <div class="item mac">Mac OS</div>
+                </div>
+                <div class="steps-list">
+                    <div id="macSteps">
+                        <ol>
+                            <li>
+                                <p>下载二进制文件。您可以选择前往本项目 Github 的 Release
+                                    页面下载官方编译版本，或者使用本站托管的下载地址。如果您不信任编译版本，您可以下载源代码后自行编译。</p>
+                                <div class="description">主分支最新版本：Past.2022.3.12.15</div>
+                                <div class="button-list">
+                                    <a href="https://github.com/pokemonchw/dieloli/releases" target="_blank" class="download-button">从 Github 下载</a>
+                                    <a href="http://static.nebula-soft.com/windows/games/dieloli/latest/" target="_blank" class="download-button">从本站托管服务器下载</a>
+                                    <a href="https://github.com/pokemonchw/dieloli/archive/refs/heads/master.zip" target="_blank" class="download-button">下载源代码</a>
+                                </div>
+                            </li>
+                            <li>解压下载的二进制文件，直接运行<code>game</code>文件</li>
+                        </ol>
+                        <p class="description">初次运行需要较长时间预热数据。</p>
+                    </div>
+                </div>
+                <div class="type-list">
+                    <div class="item linux">Linux</div>
+                </div>
+                <div class="steps-list">
+                    <div id="linuxSteps">
+                        <p class="description">Linux 不提供任何编译版本，您需要自行从源码编译。</p>
+                        <ol>
+                            <li>
+                                <p>下载源代码。</p>
+                                <div class="description">主分支最新版本：Past.2022.3.12.15</div>
+                                <div class="button-list">
+                                    <a href="https://github.com/pokemonchw/dieloli/archive/refs/heads/master.zip" target="_blank" class="download-button">下载源代码</a>
+                                </div>
+                            </li>
+                            <li>通过<code>pip</code>等工具安装依赖</li>
+                            <li>使用 python 环境运行<code>game.py</code>即可</li>
+                        </ol>
+                        <p class="description">初次运行需要较长时间预热数据。</p>
+                    </div>
+                </div>
+                <div class="type-list">
+                    <div class="item android">Android</div>
+                </div>
+                <div class="steps-list">
+                    <div id="androidSteps">
+                        <p class="description">本项目暂不支持移动设备运行。如有相关需求，欢迎参与移植。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contribute-box" id="contribute">
+        <div class="content">
+            <h2 class="title">参与贡献</h2>
+            <h3>参与开发工作</h3>
+            <p>欢迎点击下方按钮参与 dieloli 项目的开发工作。dieloli 是一个<code>ERALIKE</code>游戏，基于 Python 独立进行开发。早期版本曾使用<code>pyera</code>进行构架，现已全部废弃。
+            </p>
+            <p>想要参与开发请与开发者联系，联系方式在本页面底部。</p>
+            <div class="button-list">
+                <a href="https://github.com/pokemonchw/dieloli" target="_blank" class="in-button">Github 仓库</a>
+            </div>
+            <p>日常开发备份在<code>instability</code>分支中进行，pr
+                也请提交至此分支，<code>master</code>分支在开发完成前作为设计展示分支使用。
+                代码风格化通常使用<code>black</code>自动完成，行宽为<code>108</code>。</p>
+
+            <h3>参与本地化翻译</h3>
+            <p>本项目使用<code>gettext</code>进行本地化设置。请于<code>data/po</code>目录下创建对应语言目录，切换语言请编辑
+                <code>config.ini</code>中的<code>language</code>项。协作翻译方案待定。</p>
+
+            <h3>请我喝奶茶QwQ</h3>
+            <div class="button-list">
+                <a href="https://afdian.net/@byayoi" target="_blank" class="in-button">爱发电</a>
+            </div>
+
+            <h3>请求</h3>
+            <p>帮助中国的可怜萝莉控！</p>
+        </div>
+    </div>
+    <div class="blog-post-box">
+        <div class="content">
+            <h2 class="title">开发路线图</h2>
+            <div class="post-list">
+                <div class="item big">
+                    <h2>Past 2022.3.12.15 版本更新日志</h2>
+                    <div class="info">
+                        <div class="line time">2022年03月12日</div>
+                    </div>
+                </div>
+                <div class="right-post-list">
+                    <div class="item">
+                        <h2>Past 2022.3.11.8 版本更新日志</h2>
+                        <div class="info">
+                            <div class="line time">2022年03月11日</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h2>Past 2022.3.11.3 版本更新日志</h2>
+                        <div class="info">
+                            <div class="line time">2022年03月11日</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h2>Past 2022.3.4.9 版本更新日志</h2>
+                        <div class="info">
+                            <div class="line time">2022年03月04日</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h2>Past 2022.3.4.14 版本更新日志</h2>
+                        <div class="info">
+                            <div class="line time">2022年03月04日</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="question-answer-box" id="QA">
+        <div class="content">
+            <h2 class="title">一些常见的奇怪问题 🤔</h2>
+
+            <h3>初次启动慢</h3>
+            <p>游戏初次启动时需要对数据进行预热处理，预热时间大约一分钟左右，请耐心等待。</p>
+
+            <h3>操作攻略？</h3>
+            <p>游戏操作模仿一般命令行操作逻辑，大部分操作可参考命令行工具的基本使用习惯。</p>
+            <p>游戏中所有的按钮都分为被编号的数字按钮和未编号的文字按钮两种，它们都可以用鼠标点击，或直接在输入栏输入编号或文本进行交互。</p>
+            <p>大部分文本交互会等待玩家进行输入，此时点击鼠标左键或者键盘任意键即可。</p>
+            <p>所有的等待用户交互的文本，都可以通过鼠标右键一次性跳过。</p>
+            <p>可通过光标键盘上下键回溯之前的输入内容，回溯的上限是<code>20</code>条。</p>
+
+            <h3>字体</h3>
+            <p>本游戏界面设计依赖<code>Sarasa Mono SC</code>字体，若系统未安装此字体将会 fallback 到系统默认字体，不能保证能否达到设计效果。</p>
+
+            <h3>著作权信息</h3>
+            <p>本项目基于<code>cc by nc sa</code>协议，开发者允许任何人基于此项目做除商业行为外的任何事，同时允许任何人对本项目进行除协议外的任何改动，仅需注明原作者，以及以相同方式进行传播
+                (指同样使用<code>cc by nc sa</code>协议)。</p>
+            <p>请勿将本项目用作商业用途。</p>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content">
+            <p>&copy;2022 pokemonchw |
+                <a href="https://github.com/pokemonchw/dieloli" target="_blank">Github</a> |
+                <a href="https://afdian.net/@byayoi" target="_blank">爱发电</a> |
+                <a href="mailto:pokemonchw@gmail.com" target="_blank">联系邮箱</a> |
+                <a href="https://twitter.com/intent/follow?screen_name=nekoharuyayuzu" target="_blank">Twitter</a> |
+                <a href="https://www.nebula-soft.com" target="_blank">本站由星云软件工作室维护</a>
+            </p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
