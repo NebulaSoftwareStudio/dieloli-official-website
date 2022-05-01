@@ -16,12 +16,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 外部样式表 -->
-    <link rel="stylesheet" href="assets/css/style.css?v=202204140001">
+    <link rel="stylesheet" href="assets/css/style.css?v=202205010001">
     <!-- 外部样式表 END -->
 </head>
 <body>
 <div class="page-loader"></div>
 <div class="app">
+    <!-- 顶部菜单 -->
     <header class="page-header fixed">
         <div class="content menu">
             <a href="#" class="item">首页</a>
@@ -31,6 +32,8 @@
             <a href="#QA" class="item">Q&A</a>
         </div>
     </header>
+    <!-- 顶部菜单 结束 -->
+    <!-- 主Banner -->
     <div class="main-title-box">
         <svg class="main-title-box-background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 1084 322">
             <defs>
@@ -58,6 +61,8 @@
             </div>
         </div>
     </div>
+    <!-- 主Banner 结束 -->
+    <!-- 简介 -->
     <div class="description-box" id="description">
         <div class="content">
             <h2 class="title">什么是死亡萝莉？</h2>
@@ -68,6 +73,8 @@
             <p>在这里，没有人是特殊的，也没有人可以掌控世界，<span>玩家也不行</span>。</p>
         </div>
     </div>
+    <!-- 简介 结束 -->
+    <!-- 下载与运行教程 -->
     <div class="download-box" id="download">
         <div class="content">
             <h2 class="title">下载 & 游玩</h2>
@@ -75,6 +82,7 @@
                 在预想状态下，我们假定您已完整安装 Python 环境。除二进制编译版本以外，dieloli 依赖 Python 3.x 开发环境，请在下载运行前关注当前运行环境是否符合要求。
             </p>
 
+            <!-- 主分支最新版本信息 -->
             <div class="latest-version-info-box">
                 <div class="release-logo"></div>
                 <div class="info-box">
@@ -99,7 +107,9 @@
                     </div>
                 </div>
             </div>
+            <!-- 主分支最新版本信息 结束 -->
 
+            <!-- 发行版列表 -->
             <div class="download-list">
                 <div class="item windows">
                     <div class="icon"></div>
@@ -147,10 +157,12 @@
                     </a>
                 </div>
             </div>
+            <!-- 发行版列表 结束 -->
 
 
 
-            <h3>Windows 初始安装</h3>
+            <!-- 安装与运行教程部分 -->
+            <h3>Windows/macOS 初始安装</h3>
 
             <div class="steps-list">
                 <div id="windowsSteps">
@@ -158,22 +170,7 @@
                         <li>下载二进制文件。您可以选择前往本项目 Github 的 Release
                             页面下载官方编译版本，或者使用本站托管的下载地址。如果您不信任编译版本，您可以下载源代码后自行编译。
                         </li>
-                        <li>解压下载的二进制文件，直接运行<code>game.exe</code>文件</li>
-                    </ol>
-                    <p class="description">初次运行需要较长时间预热数据。</p>
-                </div>
-            </div>
-
-
-            <h3>macOS 初始安装</h3>
-
-            <div class="steps-list">
-                <div id="macSteps">
-                    <ol>
-                        <li>下载二进制文件。您可以选择前往本项目 Github 的 Release
-                                页面下载官方编译版本，或者使用本站托管的下载地址。如果您不信任编译版本，您可以下载源代码后自行编译。
-                        </li>
-                        <li>解压下载的二进制文件，直接运行<code>game</code>文件</li>
+                        <li>解压下载的二进制文件，直接运行<code>game</code>文件( Windows 环境启动<code>game.exe</code>文件）</li>
                     </ol>
                     <p class="description">初次运行需要较长时间预热数据。</p>
                 </div>
@@ -201,9 +198,12 @@
                     <p class="description">本项目暂不支持移动设备运行。如有相关需求，欢迎参与移植。</p>
                 </div>
             </div>
+            <!-- 安装与运行教程部分 结束 -->
 
         </div>
     </div>
+    <!-- 下载与运行教程 结束 -->
+    <!-- 参与贡献相关说明 -->
     <div class="contribute-box" id="contribute">
         <div class="content">
             <h2 class="title">参与贡献</h2>
@@ -234,6 +234,8 @@
             <p>帮助中国的可怜萝莉控！</p>
         </div>
     </div>
+    <!-- 参与贡献相关说明 结束 -->
+    <!-- 更新日志列表 -->
     <div class="blog-post-box">
         <div class="content">
             <h2 class="title">更新日志</h2>
@@ -274,6 +276,8 @@
 
         </div>
     </div>
+    <!-- 更新日志列表 结束 -->
+    <!-- 疑问与解答 -->
     <div class="question-answer-box" id="QA">
         <div class="content">
             <h2 class="title">一些常见的奇怪问题 🤔</h2>
@@ -298,7 +302,9 @@
 
         </div>
     </div>
+    <!-- 疑问与解答 结束 -->
 
+    <!-- 页面底部 -->
     <footer class="footer">
         <div class="content">
             <p>&copy;2022 pokemonchw |
@@ -310,6 +316,16 @@
             </p>
         </div>
     </footer>
+    <!-- 页面底部 结束 -->
+
+
+    <!-- 切换夜间/日间模式 -->
+    <div class="display-mode-change-button"></div>
+    <!-- 切换夜间/日间模式 结束 -->
 </div>
+
+
+<!-- 引入外部 JavaScript 脚本 -->
+<script src="assets/js/main.js?v=202205010001"></script>
 </body>
 </html>
