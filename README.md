@@ -5,6 +5,7 @@ dieloli.org official website source code
 * ~~Dark Mode support~~ ✅ finished;
 * Redesign page footer;
 * i18n support;
+* Github Action;
 
 ## License
 This website is develop for dieloli Project. Under Apache License V2.0 for free use.
