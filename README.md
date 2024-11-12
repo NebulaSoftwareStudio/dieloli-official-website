@@ -6,13 +6,13 @@ In 2024, we transitioned to using `Vue 3` to streamline the development process 
 
 The source code for the old site has been moved to the `frontend-v1` folder.
 
-The new version of the website includes a `backend` component that updates GitHub release versions in real-time and initializes mirrors.
+The new version of the website includes a *backend* component that updates GitHub release versions in real-time and initializes mirrors.
 The backend logic is divided into two parts: 
 
 * the first is an `API` built with PHP to handle communication between the website frontend and the database,
 * and the second is a `scheduled task` component implemented in Python, which uses gh-cli to update versions and build mirrors.
 
-For detailed information, please refer to the backend-v2 directory.
+For detailed information, please refer to the `backend-v2` directory.
 
 
 ## Develop Plan
